@@ -1,5 +1,5 @@
 ## BLOG STORE 
-This is my final future ready talent project . I have made a foodblog website from where people can learn new recipes and also can share their recipes .
+This is my final mini project . I have made a foodblog website from where people can learn new recipes and also can share their recipes .
 ## My website link : https://ambitious-ocean-0d22ecc00.2.azurestaticapps.net/
 ##SCREENSHOTS
 ![Screenshot 2022-08-29 102938](https://user-images.githubusercontent.com/96695200/187126457-1d9fc0a9-118d-468f-bef5-1b69be884e16.png)
