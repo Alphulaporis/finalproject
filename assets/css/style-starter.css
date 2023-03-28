@@ -421,7 +421,7 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto; }
+  height: 400px; }
 
 .img-thumbnail {
   padding: 0.25rem;
