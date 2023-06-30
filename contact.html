@@ -105,7 +105,7 @@
                 <div class="row map-content-9">
                     <div class="col-lg-8">
                         <p class="mb-4">Your email address will not be published. Required fields are marked *</p>
-                        <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="">
+                        <form onsubmit= "sendEmail(); reset(); return false;">
                             <div class="form-grid">
                                 <div class="input-field">
                                     <label> Your name</label>
@@ -139,13 +139,13 @@
 
                             <h5 class="mt-4 pt-lg-3">Phone informatiom</h5>
                             <p><span class="fa fa-mobile"></span> <strong>Phone :</strong>
-                                <a href="tel:+1(12) 366 411 4999"> (+91) 9044832836</a></p>
+                                <a href="tel:+919044832836"> (+91) 9044832836</a></p>
 
                             <p><span class="fa fa-phone"></span> <strong>Tel :</strong>
                                 <a href="tel:+1(12) 366 411 4999"> (0535) 320 2716</a></p>
 
                             <p> <span class="fa fa-envelope"></span> <strong>Email :</strong>
-                                <a href="mailto:mail@example.com"> alphalaporis42@gmail.com</a></p>
+                                <a href= mailto:ayushpvas9291@gmail.com > alphalaporis42@gmail.com</a></p>
 
                             <h5 class="mt-4 pt-lg-3 mb-3">Feel free to contact us</h5>
                             <p>We want to provide you with a great experience which is why we want to hear from you.
@@ -330,6 +330,27 @@
 
   <!-- bootstrap js -->
   <script src="assets/js/bootstrap.min.js"></script>
+
+  <script src ="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+      Email.send({
+    Host : "smtp.gmail.com",
+    Username : "ayushpvas9291@gmail.com",
+    Password : "Ayush@4200",
+    To : 'ayushzomato69@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New enquiry regarding Alpha Blogs",
+    Body : "Name:" + document.getElementById("name").value
+    + "<br> Email: " + document.getElementById("email").value +
+    "<br> : phone no: " + document.getElementById("phone").value +
+    "<br> Message: " + document.getElementById("message").value
+}).then(
+  message => alert("message sent successfully")
+);
+    }
+
+  </script>
 
   </body>
 
