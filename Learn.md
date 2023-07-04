@@ -1,4 +1,4 @@
-## BLOG STORE 
+BLOG STORE 
 This is my final mini project . I have made a foodblog website from where people can learn new recipes and also can share their recipes .
 ## My website link : https://thelaporisalpha.live
 ##SCREENSHOTS
